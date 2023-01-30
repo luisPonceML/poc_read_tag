@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  name: sonic-demo
+spec:
+  destination:
+    namespace: namespace
+    server: "https://kubernetes.default.svc"
+  project: project
+  source:
+    path: path
+    repoURL: --
+    targetRevision: v9.9
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
