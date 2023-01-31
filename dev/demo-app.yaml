@@ -12,7 +12,7 @@ spec:
   source:
     path: path
     repoURL: --
-    targetRevision: v9.9
+    targetRevision: main
   syncPolicy:
     automated:
       selfHeal: true
