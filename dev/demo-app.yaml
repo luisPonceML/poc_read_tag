@@ -13,6 +13,20 @@ spec:
     path: path
     repoURL: --
     targetRevision: main
+    helm:
+      releaseName: autopay
+      values: |
+        topicVersion: 32
+        env: dev
+        size: small
+        subscriptions:
+          - name: agent-notes
+            owner: 
+            namespace: internal-tools
+            gcpServiceAccount: agent-notes-service@internal-tools-dev-oxc2.iam.gserviceaccount.com
+            unackAlertSeverity: critical
+            dlUnackAlertSeverity: critical
+            maxDeliveryAttempts: 5
   syncPolicy:
     automated:
       selfHeal: true
