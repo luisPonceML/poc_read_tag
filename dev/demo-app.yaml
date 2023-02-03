@@ -20,13 +20,13 @@ spec:
         env: dev
         size: small
         subscriptions:
-          - name: agent-notes
+          - name: subscription
             owner: 
-            namespace: internal-tools
-            gcpServiceAccount: agent-notes-service@internal-tools-dev-oxc2.iam.gserviceaccount.com
-            unackAlertSeverity: critical
-            dlUnackAlertSeverity: critical
-            maxDeliveryAttempts: 5
+            namespace: namespacename
+            gcpServiceAccount: serviceaccount
+            unackAlertSeverity: asd
+            dlUnackAlertSeverity: asd
+            maxDeliveryAttempts: 1
   syncPolicy:
     automated:
       selfHeal: true
