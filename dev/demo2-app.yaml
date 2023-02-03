@@ -19,7 +19,7 @@ spec:
         topicVersion: 32
         env: dev
         size: small
-        autoUpdateTargetRevision: true
+        updateTargetRevision: false
         subscriptions:
           - name: subscription
             owner: 
