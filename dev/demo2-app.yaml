@@ -17,6 +17,7 @@ spec:
       releaseName: releaseName
       values: |
         topicVersion: 32
+        updateTargetRevision: false
         env: dev
         size: small
         subscriptions:
