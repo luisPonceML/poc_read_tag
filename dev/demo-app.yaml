@@ -14,7 +14,7 @@ spec:
     repoURL: --
     targetRevision: main
     helm:
-      releaseName: autopay
+      releaseName: releaseName
       values: |
         topicVersion: 32
         env: dev
