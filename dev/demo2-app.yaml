@@ -13,6 +13,20 @@ spec:
     path: path
     repoURL: --
     targetRevision: v9.10
+    helm:
+      releaseName: releaseName
+      values: |
+        topicVersion: 32
+        env: dev
+        size: small
+        subscriptions:
+          - name: subscription
+            owner: 
+            namespace: namespacename
+            gcpServiceAccount: serviceaccount
+            unackAlertSeverity: asd
+            dlUnackAlertSeverity: asd
+            maxDeliveryAttempts: 1
   syncPolicy:
     automated:
       selfHeal: true
