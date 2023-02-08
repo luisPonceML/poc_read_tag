@@ -1,3 +1,6 @@
+---
+## This argo application is generated automatically by sonic platform
+## DO NOT modify it by hand
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
