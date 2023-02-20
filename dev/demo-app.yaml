@@ -15,7 +15,7 @@ spec:
   source:
     path: path
     repoURL: --
-    targetRevision: main
+    targetRevision: v.1.1.10
     helm:
       releaseName: releaseName
       values: |
